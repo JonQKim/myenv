@@ -25,6 +25,7 @@ Plugin 'bufkill.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'syntastic'
 Plugin 'Visual-Mark'
+Plugin 'DirDiff.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -148,6 +149,13 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
+
+"-----------------------------------------------------------------------"
+" DirDiff.vim 환경설정
+"-----------------------------------------------------------------------"
+let g:DirDiffExcludes = "*.exe,.*.swp,*.pyc"
+
 
 
 "-----------------------------------------------------------------------"
